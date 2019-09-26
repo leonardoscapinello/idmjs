@@ -1,0 +1,45 @@
+{
+  "name": "idm",
+  "version": "1.0.0",
+  "description": "Aplicação para gerenciamento de Identidade",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "idm-install-service": "sucrase-node backend/app/serviceInstall.js",
+    "idm-uninstall-service": "sucrase-node backend/app/serviceUnistall.js",
+    "idm": "sucrase-node backend/app/server.js",
+    "dev": "nodemon backend/app/server.js",
+    "debug": "nodemon backend/app/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^2.4.2",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "ldapjs": "^1.0.2",
+    "ldapjs-client": "^0.1.1",
+    "multer": "^1.4.2",
+    "mysql2": "1.5.2",
+    "node-schedule": "^1.3.2",
+    "node-ssha256": "^0.1.1",
+    "node-windows": "^0.1.14",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "promised-ldap": "^0.3.0",
+    "request": "^2.88.0",
+    "sequelize": "^5.16.0",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2",
+    "sequelize-cli": "^5.5.0",
+    "sucrase": "^3.10.1"
+  }
+}
